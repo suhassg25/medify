@@ -1,0 +1,46 @@
+.small {
+    background-image: url(/src/assets/phoneImage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32vw;
+    height: 103vh;
+    position: relative;
+    z-index: -1;
+    margin-top: 227px;
+    margin-left: -299px;
+    border-radius: 35px 50px 0 0;
+}
+
+.firstSmall {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 302px;
+    height: 415px;
+    margin-top: 88px;
+}
+
+.download {
+    display: flex;
+}
+
+.secondLarge {
+    width: 300px;
+    height: 505px;
+     overflow: hidden;
+     margin-left: -100px;
+     position: relative;
+     z-index: -2;
+}
+
+.large {
+ background-image: url(/src/assets/phoneImage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 103vh;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    border-radius: 35px 50px 0 0;
+    margin-top: -490px;
+}

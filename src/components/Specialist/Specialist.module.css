@@ -1,0 +1,39 @@
+.specialist {
+    height: 729px;
+    background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
+    padding: 20px;
+}
+
+.heading {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 400px;
+    margin-left: 18%;
+}
+
+.imageHover:hover {
+    border: 2px solid rgba(42, 167, 255, 1);
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+.imageHover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 251, 254, 1);
+}

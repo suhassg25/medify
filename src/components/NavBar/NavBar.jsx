@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import InputBase from '@mui/material/InputBase';
 import { useEffect, useState } from "react";
+import {Link} from "react-router-dom"
 
 function Navbar() {
     const [active, setActive] = useState(false);
@@ -51,7 +52,7 @@ function Navbar() {
         <div>
             <p className={Styles.navbarHeading}>The health and well-being of our patients and their health care team will always be our priority, so we follow the best practices for cleanliness.</p>
             <nav className={Styles.navbar}>
-                <img className={Styles.logo} src={Logo} alt="medify-logo" />
+               <Link to="/">  <img className={Styles.logo} src={Logo} alt="medify-logo" /> </Link>
 
                 <div className={Styles.navbarLinks}>
                     <div className={Styles.links}>
