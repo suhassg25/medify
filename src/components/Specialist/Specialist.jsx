@@ -22,7 +22,7 @@ function ImageCard({image}) {
 function Specialist(){
     const images = [image1, image2, image3, image4, image5, image6, image7, image8];
 return(
-    <div className={Style.specialist}>
+    <div className={Style.specialist} id="specialistSection">
         <h3 className={Style.heading}>Find by specialisation</h3>
         <div className={Style.icons}>
         {images.map((item,index)=>{

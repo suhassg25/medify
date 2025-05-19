@@ -39,7 +39,6 @@ function Navbar() {
         else {
             setCountries([]);
             setCity('City');
-            alert("Not selected proper State");
         }
     }
 
@@ -143,7 +142,7 @@ function Navbar() {
                                 labelId="state-select"
                                 id="state"
                                 value={stateSelected}
-                                onChange={(e) => { setStateSelected(e.target.value); fetchCity(e.target.value); localStorage.set('state', e.target.value) }}
+                                onChange={(e) => { setStateSelected(e.target.value); fetchCity(e.target.value); localStorage.setItem('state', e.target.value) }}
                                 sx={{ width: 340 }}
                                 input={
                                     <OutlinedInput
@@ -166,7 +165,7 @@ function Navbar() {
                                 labelId="city-select"
                                 id="city"
                                 value={city}
-                                onChange={(e) => { setCity(e.target.value); localStorage.set('city', e.target.value) }}
+                                onChange={(e) => { setCity(e.target.value); localStorage.setItem('city', e.target.value) }}
                                 sx={{ width: 540 }}
                                 input={
                                     <OutlinedInput

@@ -8,6 +8,16 @@
     background-color: rgb(255, 255, 255);
     padding-top: 50px;
 }
+.searchHospitals{
+    width: 1130px;
+    height: 100%;
+    margin-left: 135px;
+    border-radius: 10px;
+    border: 1px solid rgba(240, 240, 240, 1);
+    margin-top: -282px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+}
 .searchInputs{
     display: flex;
     justify-content: space-around;

@@ -4,7 +4,8 @@ import hero from "../../assets/hero_image.png"
 import Search from "../SearchResults/SearchResults"
 
 
-function Hero() {
+function Hero( ) {
+
     return (
         <div>
         <div className={Style.hero}>
@@ -17,7 +18,7 @@ function Hero() {
                     <p className={Style.supportiveText}>Connect instantly with a 24x7 specialist or choose to </p>
                     <p className={Style.supportiveText}>video visit a particular doctor.</p>
                 </div>
-                <Button variant="contained" sx={{marginTop:"12px"}}>Find Centers</Button>
+                <Button variant="contained" sx={{marginTop:"12px"}} onClick={()=>{window.reload()}}>Find Centers</Button>
             </div>
             <div >
                 <img className={Style.image} src={hero} alt="" />

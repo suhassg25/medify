@@ -12,7 +12,7 @@ import imag9 from "../../assets/22.png"
 
 function MedSpecialist(){
     const prods = [img1, img2, img3, img4, img5];
-    return (<>
+    return (<div id="medicalSpecialistSection">
     <div style={{height:'819px'}}> 
 <h1 className={Style.heading}> Our Medical Specialist</h1>
 
@@ -30,7 +30,7 @@ function MedSpecialist(){
         <div style={{height:708, display:'flex', justifyContent:'center', alignItems:'center'}}>
         <img src={imag9} alt="" />
         </div>
-    </>)
+    </div>)
 
 }
 export default MedSpecialist;
