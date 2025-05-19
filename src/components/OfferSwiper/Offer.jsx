@@ -6,7 +6,7 @@ import Swiperes from "../SwiperComponent/Swiperes";
 function Offer(){
     const obj = [img1, img2, img1, img2, img1, img2, img1, img2, img1];
     return (<div style={{height:250}}>
-        <Swiperes products={obj} />
+        <Swiperes products={obj} slides={3}/>
     </div>)
 }
 

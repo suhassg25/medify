@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero"
 import Footer from "./components/Footer/Footer"
 import Offers from "./components/OfferSwiper/Offer"
 import Specialist from "./components/Specialist/Specialist"
+import MedicalSpecialist from "./components/MedicalSpecialist/MedSpecialist"
 function App() {
 
   return (
@@ -12,6 +13,8 @@ function App() {
         <Hero/>
         <Offers/>
         <Specialist/>
+        <MedicalSpecialist/>
+      <Footer/>
     </>
   )
 }

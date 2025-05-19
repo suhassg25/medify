@@ -11,6 +11,16 @@
     border-radius: 35px 50px 0 0;
 }
 
+.footer {
+    background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
+    position: relative;
+    z-index: -3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 542px;
+}
+
 .firstSmall {
     display: flex;
     align-items: center;
@@ -27,14 +37,14 @@
 .secondLarge {
     width: 300px;
     height: 505px;
-     overflow: hidden;
-     margin-left: -100px;
-     position: relative;
-     z-index: -2;
+    overflow: hidden;
+    margin-left: -100px;
+    position: relative;
+    z-index: -2;
 }
 
 .large {
- background-image: url(/src/assets/phoneImage.png);
+    background-image: url(/src/assets/phoneImage.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 103vh;
@@ -43,4 +53,48 @@
     width: 100%;
     border-radius: 35px 50px 0 0;
     margin-top: -490px;
+}
+
+.heading {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+.span {
+    color: rgba(42, 167, 255, 1);
+}
+
+.linkHeading {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(65, 65, 70, 1);
+
+}
+
+.inputBox {
+    width: 200px;
+    border: none;
+    padding: 8px;
+    outline: none;
+    font-size: 16px;
+}
+.icon{
+    margin-top: 80px;
+    width : 100%;
+    display: flex;
+    gap: 40px;
+}
+.icon img{
+    height: 69px;
+    width: 224px;
 }
