@@ -6,6 +6,9 @@ import BookingPage from "../../pages/BookingPage";
 
 const BookingCard = ({ item, slotBooking, booked }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  if(booked && booked["Hospital Name"]){
+    item = booked;  
+  }
 
   const toggleSlots = () => {
     setIsExpanded(!isExpanded);
@@ -48,8 +51,8 @@ const BookingCard = ({ item, slotBooking, booked }) => {
             <Button variant="contained" onClick={toggleSlots}> {isExpanded ? "Hide Slots" : "Book FREE Center Visit"} </Button>
           </div>: 
             <div style={{marginTop:10}}>
-              <p> Booking At : {booked.time}</p>
-              <p style={{position:'relative', left:100, padding:0, top:-20}}>{booked.date}</p>
+              <p> Booking At : {booked.time != 'undefined' ? booked.time || item.bookingTime : ''}</p>
+              <p style={{position:'relative', left:100, padding:0, top:-20}}>{booked.date !='undefined' ? booked.date || item.bookingDate : ''}</p>
              
             </div>
           }
