@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Container, Typography, Card, CardContent } from '@mui/material';
+import BookingCard from '../components/BookingCard/BookingCard';
 
 const MyBookings = ({hospital}) => {
   const [bookings, setBookings] = useState([]);
@@ -13,13 +14,7 @@ const MyBookings = ({hospital}) => {
     <Container>
       <Typography variant="h4" component="h1" gutterBottom>My Bookings</Typography>
       {bookings.map((booking, idx) => (
-        <Card key={idx} sx={{ marginBottom: 2 }}>
-          <CardContent>
-            <Typography>Booking ID: {booking.id}</Typography>
-            <Typography>Date: {booking.date}</Typography>
-            <Typography>Time: {booking.time}</Typography>
-          </CardContent>
-        </Card>
+         <BookingCard item={booking.item} slotBooking={false} booked={booking}/>
       ))}
     </Container>
   );

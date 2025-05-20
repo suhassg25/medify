@@ -4,7 +4,7 @@ import Style from "./BookingCard.module.css"
 import { Button } from "@mui/material";
 import BookingPage from "../../pages/BookingPage";
 
-const BookingCard = ({ item, slotBooking }) => {
+const BookingCard = ({ item, slotBooking, booked }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleSlots = () => {
@@ -46,7 +46,13 @@ const BookingCard = ({ item, slotBooking }) => {
             <p className={Style.free}>Available Today</p>
 
             <Button variant="contained" onClick={toggleSlots}> {isExpanded ? "Hide Slots" : "Book FREE Center Visit"} </Button>
-          </div>: <></>}
+          </div>: 
+            <div style={{marginTop:10}}>
+              <p> Booking At : {booked.time}</p>
+              <p style={{position:'relative', left:100, padding:0, top:-20}}>{booked.date}</p>
+             
+            </div>
+          }
         </div>
       </div>
       {isExpanded && (
