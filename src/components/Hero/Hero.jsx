@@ -25,8 +25,6 @@ function Hero( ) {
             </div>
 
         </div>
-            <Search/>
-
         </div>
     )
 

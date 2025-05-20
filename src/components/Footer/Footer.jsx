@@ -45,7 +45,7 @@ function Footer() {
                 </div>
             </div>
         </div>
-                 <img src={footer} alt="" />
+                 <img src={footer} alt="" style={{width:'100vw'}}/>
        </>
     )
 }
